@@ -4,5 +4,13 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	"remoteUser": "node"
+	"remoteUser": "node",
+	"forwardPorts": [
+		4321
+	],
+	"portsAttributes": {
+		"4321": {
+			"label": "Astro dev server"
+		}
+	}
 }
