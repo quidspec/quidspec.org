@@ -15,15 +15,26 @@ export default defineConfig({
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/quidspec/quidspec.org' }],
       sidebar: [
         {
-          label: 'Guides',
+          label: 'Specification',
+          autogenerate: { directory: 'spec' },
+        },
+        {
+          label: 'Explainers',
+          autogenerate: { directory: 'explainers' },
+        },
+        {
+          label: 'Implementations',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', slug: 'guides/example' },
+            { label: 'quid.lua', slug: 'implementations/lua' },
           ],
         },
         {
-          label: 'Specification',
-          autogenerate: { directory: 'reference' },
+          label: 'Using QUID',
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: 'quid.lua', slug: 'using/lua' },
+          ],
         },
       ],
     }),
