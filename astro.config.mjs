@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://quidspec.org',
   integrations: [
     starlight({
-      title: 'QUID',
+      title: 'QUID Specification',
       logo: {
         src: './src/assets/quidlogo.svg',
         replacesTitle: true
